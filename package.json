@@ -1,0 +1,39 @@
+{
+  "name": "login_auth",
+  "version": "1.0.0",
+  "description": "login_app",
+  "main": "server.js",
+  "scripts": {
+    "client-install":"npm install --prefix client",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server":"nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev":"concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/godfreydhl/login_auth.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/godfreydhl/login_auth/issues"
+  },
+  "homepage": "https://github.com/godfreydhl/login_auth#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.23",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
